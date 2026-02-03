@@ -1,4 +1,4 @@
-function woodQuantity(chairQuantity, tableQuantity, bedQuantity){
+function woodQuantity(chairQuantity = 0, tableQuantity = 0, bedQuantity = 0){
     const perChairWood = 3;
     const perTableWood = 10;
     const perBedWood = 50;
@@ -7,7 +7,9 @@ function woodQuantity(chairQuantity, tableQuantity, bedQuantity){
     const tableTotalWood = tableQuantity * perTableWood;
     const bedTotalWood = bedQuantity * perBedWood;
 
-    return `Per chair wood need ${chairTotalWood}, Per table wood need ${tableTotalWood}, and Per bed wood need ${bedTotalWood}`;
+    const allWoods = chairTotalWood + tableTotalWood + bedTotalWood;
+
+    return `Per chair wood need ${chairTotalWood}, Per table wood need ${tableTotalWood}, and Per bed wood need ${bedTotalWood} all most need total woods`;
 }
 
 const totalWood = woodQuantity(3, 6, 7);
