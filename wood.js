@@ -9,7 +9,7 @@ function woodQuantity(chairQuantity = 0, tableQuantity = 0, bedQuantity = 0){
 
     const allWoods = chairTotalWood + tableTotalWood + bedTotalWood;
 
-    return `Per chair wood need ${chairTotalWood}, Per table wood need ${tableTotalWood}, and Per bed wood need ${bedTotalWood} all most need total woods`;
+    return `Per chair wood need ${chairTotalWood}, Per table wood need ${tableTotalWood}, and Per bed wood need ${bedTotalWood} all most need total woods ${allWoods}`;
 }
 
 const totalWood = woodQuantity(3, 6, 7);
